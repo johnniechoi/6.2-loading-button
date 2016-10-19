@@ -5,14 +5,14 @@ var Pizza = Backbone.Model.extend({
   // addLike: function(){
   //   this.set('like', this.get('like')+1)
   // },
-  initialize: function() {
-    console.log('wow, a function was born!');
-  }
+  // initialize: function() {
+  //   console.log('wow, a function was born!');
+  // }
 });
 
 var PastaCollection = Backbone.Collection.extend({
   model: Pizza,
-  url: 'http://tiny-lasagna-server.herokuapp.com/collections/posts',
+  url: 'http://tiny-lasagna-server.herokuapp.com/collections/pizza',
   // parse: function(response){
   //   return response.results;
   // }
@@ -22,15 +22,6 @@ module.exports = {
   'PastaCollection': PastaCollection,
 };
 
-// var data = [
-//   { 'type': 'shroom',
-//     'ingredients': 'cheese',
-//     'nuts': true,},
-//   { 'type': 'pep',
-//     'ingredients': 'tomatmo',
-//     'nuts': true,}
-// ];
-//
 // $.ajax({
 //   url: 'http://tiny-lasagna-server.herokuapp.com/collections/pizza',
 //   type: 'POST',
