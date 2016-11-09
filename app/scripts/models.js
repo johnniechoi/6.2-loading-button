@@ -12,7 +12,7 @@ var Pizza = Backbone.Model.extend({
 
 var PastaCollection = Backbone.Collection.extend({
   model: Pizza,
-  url: 'http://tiny-lasagna-server.herokuapp.com/collections/pizza',
+  url: 'https://tiny-lasagna-server.herokuapp.com/collections/pizza',
   // parse: function(response){
   //   return response.results;
   // }
